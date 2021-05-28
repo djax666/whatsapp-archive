@@ -56,3 +56,13 @@ Add a line in the ./index.html between \<UL\>\<\/UL\>:
 
 If there is a multline chat with some numbers, like phone number, at the beginning of the line, the parser crashes. Edit the text so the line doesn't start with a number
 
+## Used resources
+
+* the main python codes comes from [https://github.com/automaciej/whatsapp-archive](https://github.com/automaciej/whatsapp-archive])
+* the Mom picture comes from [https://freesvg.org/by/birgitlachner](https://freesvg.org/by/birgitlachner)
+* the popup javascript comes from [https://bqardi.dk/tutorials/js/image-popup/image-popup.php](https://bqardi.dk/tutorials/js/image-popup/image-popup.php)
+* [https://projects.verou.me/bubbly/](https://projects.verou.me/bubbly/) helps me creating the CSS for the bubble.
+* ["Generating Link Preview" Article on Alan Xiang's Blog](https://www.alanshawn.com/tech/2020/03/25/link-preview.html) helps me creating the link preview.
+
+Thank to all of them for sharing their knowledge.
+
