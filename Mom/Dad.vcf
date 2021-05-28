@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:2.1
+FN:Jean Dupont
+N:Dupont;Jean
+ADR;WORK;PREF;QUOTED-PRINTABLE:;Bruxelles 1200=Belgique;6A Rue Th. Decuyper
+LABEL;QUOTED-PRINTABLE;WORK;PREF:Rue Th. Decuyper 6A=Bruxelles 1200=Belgique
+TEL;CELL:+1234 56789
+EMAIL;INTERNET:jean.dupont@example.com
+UID:
+END:VCARD
