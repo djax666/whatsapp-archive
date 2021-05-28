@@ -10,9 +10,7 @@ Requirements:
    * python3-dateutil (on Debian)
    * python2-jinja2
 
-On Linux, run this in shell. On Windows, run this in cmd.
 
-    ./whatsapp_archive.py -i your_file.txt -o output.html -m "Whatsapp username"
 
 [saving]: https://faq.whatsapp.com/en/android/23756533/?category=5245251
 
@@ -43,6 +41,11 @@ My export solution is destructive :
 * I save the avatar picture of the chat and save it in the folder "avatar" with the name of the chat "Mom.jpg"
 
 I do these for every chat.
- 
- ./whatsapp_archive.py -i "mom/WhatsApp Chat with Mom.txt" -o "mom/index.html" -m "My Whatsapp username"
+
+Then on Linux, run this in shell. On Windows, run this in cmd.
+
+    python3 ./whatsapp_archive.py -i "mom/WhatsApp Chat with Mom.txt" -o "mom/index.html" -m "My Whatsapp username"
   
+Issues:
+
+If the is a multline chat with some number like phone number, the parser crashes.
