@@ -46,12 +46,13 @@ Then on Linux, run this in shell. On Windows, run this in cmd.
 
     python3 ./whatsapp_archive.py -i "mom/WhatsApp Chat with Mom.txt" -o "mom/index.html" -m "My Whatsapp username"
 
-Add a line in the ./index.html between <UL></UL>:
+Add a line in the ./index.html between \<UL\>\<\/UL\>:
 
 ````HTML
    <!- Mom --><li><a href="Mom/index.html" target="chat_frame"><img class="avatar" src="./avatar/Mom.jpg"><span class="label">Mom</span></a></li>
-```
-###Known Issues/Bugs:
+`````
+
+## Known Issues/Bugs:
 
 If there is a multline chat with some numbers, like phone number, at the beginning of the line, the parser crashes. Edit the text so the line doesn't start with a number
 
