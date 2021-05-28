@@ -1,0 +1,245 @@
+.tt{
+    height: 128px;
+    background: #075e54;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1;
+
+}
+
+#msgs{
+
+    margin-bottom: 30px;
+}
+.mdate{
+
+    color:gray;
+    text-align: right;
+}
+img.avatar {
+    height: 64px;
+    width: 64px;
+    margin-top: 32px;
+    margin-left: 33px;
+    margin-right: 32px;
+}
+h1 {
+    margin-left: 128px;
+    margin-top: -48px;
+    color:#ffffff;
+}
+
+img.popup {
+    max-height: 300px; 
+    max-width:300px;
+    cursor: pointer;
+}
+img.logo {
+    height: 32px; 
+    max-width:32px;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width:64px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    font-size: 14px;
+    background-image: url("../icons/background.png");
+}
+ol.users {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 1px;
+    padding: 1px;
+}
+ol.messages {
+    list-style-type: none;
+    list-style-position: inside;
+   /* margin: 0;*/
+    /* padding: 0;*/
+}
+ol.messages li {
+    /*margin-left: 1em;*/
+    font-size: 16px;
+}
+span.username {
+    color: gray;
+}
+.username-me{
+
+    text-align: right;
+}
+.username-others{
+    margin-top: 8px;
+    text-align: left;
+}
+.username-nobody{
+
+    text-align: center;
+}
+
+span.date {
+    color: gray;
+}
+.speech-bubble {
+    position: relative;
+    background: #ffffff;
+    border-top-right-radius: .4em;
+    border-bottom-left-radius: .4em;
+    border-bottom-right-radius: .4em;
+    margin-top: 19px;
+    margin-right: 25%;
+    padding: 10px;
+    margin-left: 19px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 9.5px;
+	width: 0;
+	height: 0;
+	border: 19px solid transparent;
+	border-right-color: #ffffff;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -9.5px;
+	margin-left: -19px;
+}
+
+.speech-bubble-me {
+    position: relative;
+    background: #e1ffc7;
+    border-top-left-radius: .4em;
+    border-bottom-left-radius: .4em;
+    border-bottom-right-radius: .4em;
+    margin-top: 19px;
+    margin-left: 25%;
+    margin-right: 19px;
+    padding: 10px;
+}
+
+.speech-bubble-me:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 9.5px;
+	width: 0;
+	height: 0;
+	border: 19px solid transparent;
+	border-left-color: #e1ffc7;;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -9.5px;
+	margin-right: -19px;
+}
+
+.speech-bubble-nobody {
+    position: relative;
+    background: #fff5c4;
+    border-radius: .4em;
+    margin-top: 19px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    padding: 10px;
+}
+/* fleche au milieu
+.speech-bubble-nobody:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 19px solid transparent;
+    border-bottom-color: #fff5c4;
+    border-top: 0;
+    margin-left: -19px;
+    margin-top: -19px;
+}*/
+
+.div-link-preview {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	border: 2px solid #C0C0C0;
+	overflow: hidden;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.div-link-preview:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+
+.div-link-preview-col {
+	float: left;
+}
+
+.div-link-preview-col-l {
+	width: 18%
+}
+
+.div-link-preview-col-r {
+	width: 80%;
+	padding-top: 5px;
+}
+
+
+.div-link-preview-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.div-link-preview-content::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.div-link-preview-title {
+	display: block;
+	margin-right: auto;
+	width: 98%;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #101010;
+	text-decoration: underline;
+}
+
+.div-link-preview-title a{
+	color: #101010;
+	text-decoration: underline;
+}
+
+.div-link-preview-content {
+	display: block;
+	font-size: small;
+	height: 58%;
+	overflow: auto;
+	color: #606060;
+}
+
+.div-link-preview-domain {
+	padding-right: 2%;
+	display: block;
+	font-weight: bold;
+	color: #808080;
+	text-align: right;
+	font-size: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
