@@ -26,16 +26,16 @@ So if you have a video, the archive will contain only a few days.
 My export solution is destructive :
 
  * Step 0: Switch the Language Setting to US English on your Android device.
- * Step 1: I export the archive without media in GoogleDrive\Archive\folder0\
-  You will have: WhatsApp Chat with Mom.txt
-* Step2: I export the archive with media in GoogleDrive\Archive\folder1\
-  You will have: WhatsApp Chat with Mom.txt + some media.
-  Open this "WhatsApp Chat with Mom.txt" and check until when it goes.
+ * Step 1: I export the archive without media in **GoogleDrive\Archive\folder0\**
+  You will have: **WhatsApp Chat with Mom.txt**
+* Step2: I export the archive with media in **GoogleDrive\Archive\folder1\**
+  You will have: **WhatsApp Chat with Mom.txt** + some media.
+  Open this **"WhatsApp Chat with Mom.txt"** and check until when it goes.
   In WhatsApp, delete all exported media.
-* Step 3: I export the archive with media in GoogleDrive\Archive\folder2\
+* Step 3: I export the archive with media in **GoogleDrive\Archive\folder2\**
   and so on until I reached the first day of chat.
-* Step X+1: I merge the file GoogleDrive\Archive\folder0\WhatsApp Chat with Mom.txt
- with GoogleDrive\Archive\folder1\WhatsApp Chat with Mom.txt and GoogleDrive\Archive\folder2\WhatsApp Chat with Mom.txt and ...
+* Step X+1: I merge the file **GoogleDrive\Archive\folder0\WhatsApp Chat with Mom.txt**
+ with **GoogleDrive\Archive\folder1\WhatsApp Chat with Mom.txt** and **GoogleDrive\Archive\folder2\WhatsApp Chat with Mom.txt** and ...
  to build an full archive with every media tag included. I have used [WinMerge](https://winmerge.org/) for this task. On linux, you can use [Kompare](https://apps.kde.org/kompare/) or [Meld](https://meldmerge.org/).
 * I put all the media + the consolidated "WhatsApp Chat with Mom.txt" in one folder call by the name of the chat "Mom".
 * I save the avatar picture of the chat and save it in the folder "avatar" with the name of the chat "Mom.jpg"
@@ -46,11 +46,15 @@ Then on Linux, run this in shell. On Windows, run this in cmd.
 
     python3 ./whatsapp_archive.py -i "mom/WhatsApp Chat with Mom.txt" -o "mom/index.html" -m "My Whatsapp username"
 
-Add a line in the ./index.html between \<UL\>\<\/UL\>:
+Add a line in the **./index.html** between \<UL\>\<\/UL\>:
 
 ````HTML
    <!- Mom --><li><a href="Mom/index.html" target="chat_frame"><img class="avatar" src="./avatar/Mom.jpg"><span class="label">Mom</span></a></li>
 `````
+
+The result will look like these:
+
+![Result](./doc/result-small.png)
 
 ## Known Issues/Bugs:
 
